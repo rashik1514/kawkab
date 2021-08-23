@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+
+    {% for i in list1 %}
+    
+    <form method="post" action="/more_info">
+        <input type="submit" value={{ i }} name="ticker" />
+    </form>
+    {% endfor %}
+
+</body>
+</html>
+
